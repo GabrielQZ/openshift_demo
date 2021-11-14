@@ -6,6 +6,7 @@ import javax.websocket.server.PathParam;
 import java.util.List;
 import java.util.Optional;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/api/developers")
 public class DeveloperController {
