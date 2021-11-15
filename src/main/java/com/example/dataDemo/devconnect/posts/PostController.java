@@ -2,6 +2,7 @@ package com.example.dataDemo.devconnect.posts;
 
 import com.example.dataDemo.devconnect.developers.Developer;
 import com.example.dataDemo.devconnect.developers.DeveloperRepository;
+import com.example.dataDemo.devconnect.developers.Developer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.config.ConfigDataResourceNotFoundException;
 import org.springframework.http.HttpStatus;
@@ -40,4 +41,6 @@ public class PostController {
         newPost.setDeveloper(poster);
         return repository.save(newPost);
     }
+
+
 }

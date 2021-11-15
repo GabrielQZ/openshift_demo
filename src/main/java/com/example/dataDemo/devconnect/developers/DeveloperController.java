@@ -32,4 +32,9 @@ public class DeveloperController {
         return repository.findById(id);
     }
 
+    @DeleteMapping("/deleteall")
+    public String getDeveloperPosts() {
+        repository.deleteAll();
+        return "deleted";
+    }
 }
