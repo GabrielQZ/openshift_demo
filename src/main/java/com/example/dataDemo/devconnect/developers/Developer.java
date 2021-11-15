@@ -14,13 +14,15 @@ public class Developer {
     private String name;
     private String email;
     private Integer cohort;
+    private String github;
 
     public Developer() {}
 
-    public Developer(String name, String email, Integer cohort) {
+    public Developer(String name, String email, String github, Integer cohort) {
         this.name = name;
         this.email = email;
         this.cohort = cohort;
+        this.github = github;
     }
 
     public Long getId() {
@@ -31,8 +33,16 @@ public class Developer {
         this.id = id;
     }
 
+    public void setId(String github) {
+        this.github = github;
+    }
+
     public String getName() {
         return name;
+    }
+
+    public String getGithub() {
+        return github;
     }
 
     public void setName(String name) {
